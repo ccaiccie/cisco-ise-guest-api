@@ -14,3 +14,7 @@ before_install:
   - composer self-update
   - composer validate
   - composer install --prefer-dist 
+
+script:
+  # execute all of the commands which should make the build pass or fail
+  - vendor/bin/phpunit
